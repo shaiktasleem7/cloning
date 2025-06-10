@@ -1,0 +1,154 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML Tags & Concepts Showcase</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    h1, h2 {
+      background-color: #0c0c0ce4;
+      color: white;
+      padding: 15px;
+      margin: 0;
+      text-align: center;
+    }
+    h3 {
+      color: #0077cc;
+      text-align: center;
+    }
+    a {
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+      padding: 10px;
+      display: inline-block;
+      transition: all 0.3s ease-in-out;
+    }
+    a:hover {
+      color: #005999;
+      background-color: #e6f2ff;
+      border-radius: 5px;
+      transform: scale(1.05);
+    }
+    nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+    table {
+      margin: 20px auto;
+      width: 80%;
+      border-collapse: collapse;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      transition: all 0.3s ease-in-out;
+    }
+    table, th, td {
+      border: 1px solid #555;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+    table tr:hover {
+      background-color: #f0f8ff;
+    }
+    img, video, audio, iframe {
+      border-radius: 10px;
+      margin: 10px auto;
+      display: block;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: all 0.3s ease-in-out;
+    }
+    img:hover, video:hover, audio:hover, iframe:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transform: scale(1.02);
+    }
+    iframe {
+      border: 2px solid #0d0d0d;
+    }
+    hr {
+      border: 1px solid #ddd;
+      margin: 30px 0;
+    }
+    @media screen and (max-width: 768px) {
+      iframe, video {
+        width: 90% !important;
+        height: auto !important;
+      }
+      table {
+        width: 95%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 id="top">HTML Mini-Project</h1>
+  <nav>
+    <a href="#tables">Tables</a> |
+    <a href="#media">Multimedia</a> |
+    <a href="#iframe">Iframes</a> |
+    <a href="#bottom">Bottom</a>
+  </nav>
+  <hr>
+  <!-- Tables Section -->
+  <h2 id="tables">Tables and Attributes</h2>
+  <table>
+    <caption><strong>Student Grades</strong></caption>
+    <thead>
+      <tr style="background-color: lightgray;">
+        <th>Name</th>
+        <th>Subject</th>
+        <th>Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Anne</td>
+        <td>Math</td>
+        <td>95</td>
+      </tr>
+      <tr>
+        <td>Jake</td>
+        <td>Science</td>
+        <td>75</td>
+      </tr>
+      <tr>
+        <td>Chenzheyuan</td>
+        <td>English</td>
+        <td>98</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr>
+  <!-- Multimedia Section -->
+  <h2 id="media"> Multimedia Tags</h2>
+  <h3>Image</h3>
+  <img src="c:\Users\sktas\OneDrive\Desktop\portfolio-task\movieposter.png" alt="movieposter-img" width="350" height="350" />
+  <h3>Audio</h3>
+  <audio controls autoplay loop muted>
+    <source src="c:\Users\sktas\Downloads\[iSongs.info] 01 - Hey Rangule.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <h3>Video</h3>
+  <video src="c:\Users\sktas\Downloads\videoplayback.mp4" controls width="500" height="240">
+    Your browser does not support the video tag.
+  </video>
+  <hr>
+  <!-- Iframe Section -->
+  <h2 id="iframe"> Iframe and Attributes</h2>
+  <iframe src="https://en.wikipedia.org/wiki/HTML" width="600" height="300" title="Wikipedia Homepage"></iframe>
+  <hr>
+  <!-- Bottom -->
+  <h2 id="bottom"> Bottom of Page</h2>
+  <div style="text-align: center;">
+    <a href="#top"> Back to Top</a>
+  </div>
+</body>
+</html>

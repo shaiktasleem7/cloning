@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Paper Crafting Workshop Registration</title>
+ <style>
+    body {font-family: Arial, sans-serif; background-color: #f9f9f9; margin: 30px; padding: 20px;}
+ h2 {
+ text-align: center;
+ font-size: 28px;
+ background-color: #8e44ad;
+ color: white;
+ padding: 15px;
+ border-radius: 8px;
+ margin-bottom: 30px;
+ }
+ form {
+ background-color: #fff;
+ padding: 25px;
+ border-radius: 10px;
+ box-shadow: 0 0 10px rgba(0,0,0,0.1);
+ max-width: 700px;
+ margin: auto;
+ }
+ fieldset {
+ border: 1px solid #ccc;
+ border-radius: 8px;
+ padding: 20px;
+ margin-bottom: 20px;
+ }
+ legend {
+ font-weight: bold;
+ color: #5a2a83;
+ }
+ input[type="text"],
+ input[type="email"],
+ input[type="number"],
+ input[type="tel"],
+ select,
+ textarea {
+ width: 95%;
+ padding: 10px;
+ margin-top: 5px;
+ margin-bottom: 15px;
+ border: 1px solid #ccc;
+ border-radius: 4px;
+ }
+ input[type="checkbox"],
+ input[type="radio"] {
+ margin-right: 10px;
+ }
+ input[type="submit"] {
+ background-color: #8e44ad;
+ color: white;
+ padding: 12px 20px;
+ border: none;
+ border-radius: 6px;
+ font-size: 16px;
+ cursor: pointer;
+ }
+ input[type="submit"]:hover {
+ background-color: #6c2f94;
+ }
+label {
+display: block;
+margin-top: 10px;
+ }
+ </style>
+</head>
+<body>
+<h2>Paper Crafting Workshop Registration</h2>
+<form action="confirmation.html" method="post">
+ <fieldset>
+ <legend>Participant Details</legend>
+ Name: <input type="text" name="name" required>
+ Email: <input type="email" name="email" required>
+ Phone Number: <input type="tel" name="phone" required>
+ Age: <input type="number" name="age" min="5" max="100">
+ Experience Level:
+ <select name="experience">
+ <option value="">-- Select --</option>
+ <option>Beginner</option>
+ <option>Intermediate</option>
+ <option>Advanced</option>
+ </select>
+ </fieldset>
+ <fieldset>
+ <legend>Workshop Preferences</legend>
+ Preferred Date:
+ <input type="date" name="preferred_date">
+Type of Crafts:
+ <label><input type="checkbox" name="craft_type" value="Origami"> Origami</label>
+ <label><input type="checkbox" name="craft_type" value="Scrapbooking"> Scrapbooking</label>
+ <label><input type="checkbox" name="craft_type" value="Quilling"> Quilling</label>
+ <label><input type="checkbox" name="craft_type" value="Card Making"> Card Making</label>
+ <label><input type="checkbox" name="craft_type" value="Other"> Other</label>
+ If Other, please specify:
+ <input type="text" name="other_craft">
+ </fieldset>
+ <fieldset>
+ <legend>Material Requirements</legend>
+ Do you need materials provided?
+ <label><input type="radio" name="materials" value="Yes" required> Yes</label>
+ <label><input type="radio" name="materials" value="No"> No</label>
+ Any Allergies or Special Requirements?
+ <textarea name="special_requirements" rows="3" placeholder="E.g. allergy to glue, paper dust..."></textarea>
+ </fieldset>
+ <fieldset>
+ <legend>Payment Information</legend>
+ Payment Method:
+ <select name="payment" required>
+ <option value="">-- Select Payment Method --</option>
+ <option>UPI</option>
+ <option>Bank Transfer</option>
+ <option>Cash</option>
+ </select>
+ </fieldset>
+ <fieldset>
+ <legend>Confirmation</legend>
+ <label><input type="checkbox" name="confirm" required> I confirm that the above information is true and I agree to the workshop guidelines.</label>
+ </fieldset>
+ <input type="submit" value="Register">
+</form>
+</body>
+</html>
